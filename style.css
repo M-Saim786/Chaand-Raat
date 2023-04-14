@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Tangerine&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Tangerine";
+}
+body {
+  position: relative;
+  overflow: hidden;
+}
+section {
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #032841, #0a2e51);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  /* border: 1px solid red; */
+}
+h2 {
+  font-size: 6rem;
+  color: white;
+  position: relative;
+  left: 7rem;
+  top: 25rem;
+  top: 0;
+  animation: textamin 12s forwards;
+}
+@keyframes textamin {
+  0% {
+    color: #032841;
+    top: 25rem;
+  }
+  25% {
+    color: #ff9c2d;
+    top: 0rem;
+  }
+  50% {
+    color: #f0ff51;
+    top: 0;
+  }
+  100% {
+    color: #ff9c2d;
+    top: 0;
+  }
+}
+
+#from {
+  color: rgb(255, 255, 255) !important;
+  position: relative;
+  top: 50rem;
+  /* display: block; */
+  /* border: 1px solid red; */
+  text-align: center;
+  font-size: 5rem;
+  animation: fromanim 6.5s forwards;
+}
+@keyframes fromanim {
+  0% {
+    top: 40rem;
+  }
+  50% {
+    top: 25rem;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+.moon {
+  position: absolute;
+  top: 2rem;
+  left: 18rem;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  /* border: 1px solid red; */
+  border-left: 10px solid #ffd79b;
+  /* box-shadow: 0 0 10px white; */
+  transform: rotate(-30deg);
+  animation: moonanim 1.5s forwards ease-out;
+}
+@keyframes moonanim {
+  0% {
+    top: -40rem;
+  }
+  100% {
+    top: 2rem;
+  }
+  /* 100% {
+    top: 2rem;
+  } */
+}
+.mosque {
+  /* border: 1px solid red; */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 55%;
+  height: 60vh;
+  /* background-image: url("./Images/mosque.png"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  /* animation: imgani 1.5s forwards ease-in-out;  */
+}
+@keyframes imgani {
+  0% {
+    left: -45rem;
+  }
+  50% {
+    left: 2rem;
+  }
+  100% {
+    left: 0px;
+  }
+}
+.lantern {
+  width: 20%;
+  height: 20vh;
+  background-repeat: no-repeat;
+  position: relative;
+  top: -17rem;
+  left: 21rem;
+}
+.star {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #fff0 0 20px #fff 0 0 40px #fff 0 0 80px #fff;
+  animation: animate linear infinite;
+}
+@keyframes animate {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body {
+    /* border: 10px solid black; */
+    height: 100vh;
+  }
+  section {
+    border: 1px solid black;
+  }
+}
+@media screen and (max-width: 400px) {
+  body {
+    /* border: 10px solid red; */
+    height: 100vh;
+  }
+  section {
+    /* border: 1px solid black; */
+  }
+  .moon {
+    /* border: 1px solid red; */
+    left: 40px;
+  }
+  .mosque {
+    /* border: 1px solid red; */
+    width: 100%;
+    /* border: 1px solid #ffffff63; */
+    /* width: 110%; */
+    height: 30vh;
+    bottom: -3px;
+    left: 0;
+    background-position: left;
+  }
+  .mosque img {
+    /* border: 1px solid red; */
+    width: 90%;
+  }
+  h2 {
+    font-size: 3rem;
+    left: 5.5rem;
+  }
+  #from {
+    font-size: 2.4rem;
+  }
+  .text {
+    /* border: 1px solid wheat; */
+    width: 150%;
+  }
+  .lantern {
+    /* border: 1px solid red; */
+    width: 100%;
+    left: 0;
+    top: -16rem;
+  }
+  .lantern img {
+    width: 40vw;
+  }
+}
+@media screen and (max-width: 380px) {
+  body {
+    /* border: 2px solid red; */
+  }
+}
+@media screen and (max-width: 370px) {
+  body {
+    /* border: 2px solid green; */
+  }
+}
+@media screen and (max-width: 360px) {
+ 
+  .mosque {
+    /* border: 1px solid red; */
+    bottom: 20px;
+  }
+  .mosque img {
+    position: relative;
+    bottom: 0;
+  }
+  h2 {
+    font-size: 4rem;
+    /* border: 1px solid red; */
+    width: 157%;
+    height: 11vh;
+    left: 14px;
+  }
+  .lantern {
+    top: -17rem;
+  }
+ 
+}
+
+@media screen and (max-width: 350px) {
+  body {
+    height: 100vh;
+  }
+
+  .moon {
+    left: 2rem;
+    height: 110px;
+    width: 100px;
+  }
+
+  .mosque {
+    left: 0;
+    width: 100%;
+    height: 30vh;
+    bottom: 0;
+    /* border: 1px solid white; */
+    background-position: left;
+  }
+  .mosque img {
+    width: 100%;
+    /* border: 1px solid red; */
+  }
+
+  h2 {
+    font-size: 3rem;
+    left: 3rem;
+  }
+  .lantern {
+    left: -25px;
+    top: -17rem;
+    width: 30%;
+  }
+  .lantern img {
+    width: 45vw;
+  }
+  #from {
+    font-size: 2.3rem;
+  }
+}
+
+/* ========== Responsive Using THrotring========== */
+
+/* 
+@media screen and (max-width: 350px) {
+  body {
+    height: 100vh;
+    border: 1px solid red;
+  }
+
+  .moon {
+    left: 2rem;
+    height: 110px;
+    width: 100px;
+  }
+  .mosque {
+    left: 0;
+    width: 100%;
+    bottom: 0;
+  }
+  h2 {
+    font-size: 3rem;
+    left: 3rem;
+  }
+  .lantern {
+    left: -25px;
+    top: -12rem;
+    width: 30%;
+  }
+  .lantern img {
+    width: 40vw;
+  }
+  #from {
+    font-size: 2.3rem;
+  }
+} */
